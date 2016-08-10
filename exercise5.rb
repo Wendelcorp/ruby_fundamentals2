@@ -1,10 +1,10 @@
-def temp_conversion
-  puts "What is your temperature in Fahrenheit? "
-  f = gets.chomp.to_i
-  c = (f - 32) * 5 / 9
-  puts "Your temperature is #{c} Celsius"
+
+puts "What is your temperature in Fahrenheit? "
+f = gets.chomp.to_i
+
+def temp_conversion(fahrenheit)
+  c = (fahrenheit - 32.0) * 5.0 / 9.0
+  return "Your temperature is #{c} Celsius"
 end
 
-temp_conversion
-
-#adding text to test a git pull
+puts temp_conversion(f)
